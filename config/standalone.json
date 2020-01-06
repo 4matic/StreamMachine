@@ -5,15 +5,28 @@
 	"log": {
 		"stdout":     true
   },
+  "redis": {
+    "server": "redis://localhost:6379",
+    "key": "stream-machine"
+  },
   "streams": {
-    "test": {
-      "key":              "test",
+    "test-1": {
+      "key":              "test-1",
       "root_route":       true,
       "format":           "mp3",
       "seconds":          3600,
-      "metaTitle":        "Testing",
+      "metaTitle":        "Testing 1",
       "host":             "localhost",
-      "source_password":  "testing"
+      "source_password":  "testing1"
+    },
+    "test-2": {
+      "key":              "test-2",
+      "root_route":       true,
+      "format":           "mp3",
+      "seconds":          3600,
+      "metaTitle":        "Testing 2",
+      "host":             "localhost",
+      "source_password":  "testing2"
     }
   }
 }
